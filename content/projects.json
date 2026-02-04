@@ -16,28 +16,15 @@
         "Insurance integration",
         "Telemedicine capabilities"
       ],
-      "tech": ["Next.js", "Spring Boot", "PostgreSQL", "Docker", "AWS"],
-      "status": "Live",
-      "link": "https://opencare.ng"
-    },
-    {
-      "slug": "election-management",
-      "title": "Election Management System",
-      "category": "Government Platform",
-      "description": "Secure digital system for managing electoral processes and results",
-      "featured": true,
-      "thumbnail": "/images/election-thumb.jpg",
-      "problem": "Manual election management processes prone to errors and delays",
-      "solution": "Built secure platform for voter registration, result collation, and real-time reporting",
-      "features": [
-        "Voter registration and verification",
-        "Real-time result collation",
-        "Multi-level access control",
-        "Audit trails and reporting",
-        "SMS and email notifications"
+      "tech": [
+        "Next.js",
+        "Spring Boot",
+        "PostgreSQL",
+        "Docker",
+        "AWS"
       ],
-      "tech": ["React", "Spring Boot", "PostgreSQL", "Redis"],
-      "status": "Deployed"
+      "status": "Live",
+      "link": "https://opencarebd.com"
     },
     {
       "slug": "news-platform",
@@ -55,7 +42,12 @@
         "Multi-channel publishing",
         "Analytics dashboard"
       ],
-      "tech": ["Next.js", "Node.js", "MongoDB", "S3"],
+      "tech": [
+        "Next.js",
+        "Node.js",
+        "MongoDB",
+        "S3"
+      ],
       "status": "Live"
     },
     {
@@ -74,7 +66,12 @@
         "Chapter management",
         "Communication tools"
       ],
-      "tech": ["Next.js", "PostgreSQL", "Stripe", "SendGrid"],
+      "tech": [
+        "Next.js",
+        "PostgreSQL",
+        "Stripe",
+        "SendGrid"
+      ],
       "status": "Live"
     }
   ]

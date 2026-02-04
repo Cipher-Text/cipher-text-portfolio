@@ -4,7 +4,7 @@ import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Get in touch with CipherText. Let\'s discuss your project.',
+  description: 'Get in touch with Cipher Text Lab. Let\'s discuss your project.',
 }
 
 export default function ContactPage() {

@@ -1,4 +1,4 @@
-# CipherText Portfolio
+# Cipher Text Lab Portfolio
 
 A modern, responsive portfolio website built with Next.js 15, TypeScript, and Tailwind CSS. This project showcases software engineering services, projects, and products with a clean, professional design.
 

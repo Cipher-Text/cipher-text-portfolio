@@ -4,7 +4,7 @@ import { getAboutConfig } from '@/lib/content'
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Learn about CipherText - our story, philosophy, and the team behind the work.',
+  description: 'Learn about Cipher Text Lab - our story, philosophy, and the team behind the work.',
 }
 
 export default function AboutPage() {

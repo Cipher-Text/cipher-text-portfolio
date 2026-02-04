@@ -1,5 +1,5 @@
 {
-  "story": "CipherText is a software engineering company focused on building reliable digital systems for critical sectors. We started with a simple mission: create software that works, scales, and lasts. Our approach combines modern technology with thoughtful engineering—no shortcuts, no hype, just solid systems that solve real problems.",
+  "story": "Cipher Text Lab is a software engineering company focused on building reliable digital systems for critical sectors. We started with a simple mission: create software that works, scales, and lasts. Our approach combines modern technology with thoughtful engineering—no shortcuts, no hype, just solid systems that solve real problems.",
   "philosophy": [
     "Quality over speed—we build things right the first time",
     "Long-term thinking—systems designed to evolve with your needs",
@@ -8,10 +8,10 @@
   ],
   "founder": {
     "name": "Founder Name",
-    "note": "I started CipherText because I saw too many organizations struggling with unreliable software. We focus on healthcare, governance, and data platforms because these sectors need dependable systems more than most. Every project we take on, we treat as if we're building it for ourselves."
+    "note": "I started Cipher Text Lab because I saw too many organizations struggling with unreliable software. We focus on healthcare, governance, and data platforms because these sectors need dependable systems more than most. Every project we take on, we treat as if we're building it for ourselves."
   },
   "timeline": [
-    { "year": "2020", "event": "Founded CipherText" },
+    { "year": "2020", "event": "Founded Cipher Text Lab" },
     { "year": "2021", "event": "Launched first healthcare platform" },
     { "year": "2022", "event": "Expanded into government systems" },
     { "year": "2023", "event": "Built media and education platforms" },

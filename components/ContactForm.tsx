@@ -15,17 +15,23 @@ export default function ContactForm({ fields }: ContactFormProps) {
     e.preventDefault()
     setStatus('submitting')
 
-    // Log form data to console (no backend yet)
-    console.log('Form submitted:', formData)
+    try {
+      const res = await fetch('https://formspree.io/f/xlgwrrkr', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-
-    setStatus('success')
-    setFormData({})
-
-    // Reset status after 3 seconds
-    setTimeout(() => setStatus('idle'), 3000)
+      if (res.ok) {
+        setStatus('success')
+        setFormData({})
+        setTimeout(() => setStatus('idle'), 3000)
+      } else {
+        setStatus('error')
+      }
+    } catch {
+      setStatus('error')
+    }
   }
 
   const handleChange = (name: string, value: string) => {
