@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "name": "Open Care",
+      "description": "Healthcare ecosystem connecting patients, providers, and facilities across Nigeria",
+      "status": "Live",
+      "link": "https://opencare.ng",
+      "image": "/images/opencare-product.jpg"
+    },
+    {
+      "name": "News Platform",
+      "description": "Modern CMS for media organizations with editorial workflows and multi-channel publishing",
+      "status": "Beta",
+      "link": null,
+      "image": "/images/news-product.jpg"
+    },
+    {
+      "name": "Profile Engine",
+      "description": "JSON-driven landing page generator for rapid profile and portfolio deployment",
+      "status": "Development",
+      "link": null,
+      "image": "/images/profile-product.jpg"
+    }
+  ]
+}

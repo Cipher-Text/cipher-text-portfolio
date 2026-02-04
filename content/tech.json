@@ -1,0 +1,62 @@
+{
+  "stack": {
+    "frontend": [
+      { "name": "Next.js", "icon": "nextjs" },
+      { "name": "React", "icon": "react" },
+      { "name": "TypeScript", "icon": "typescript" },
+      { "name": "Tailwind CSS", "icon": "tailwind" }
+    ],
+    "backend": [
+      { "name": "Spring Boot", "icon": "spring" },
+      { "name": "Node.js", "icon": "nodejs" },
+      { "name": "PostgreSQL", "icon": "postgresql" },
+      { "name": "MongoDB", "icon": "mongodb" }
+    ],
+    "infrastructure": [
+      { "name": "Docker", "icon": "docker" },
+      { "name": "AWS", "icon": "aws" },
+      { "name": "GitHub Actions", "icon": "github" },
+      { "name": "Nginx", "icon": "nginx" }
+    ]
+  },
+  "principles": [
+    {
+      "title": "Scalability",
+      "description": "We build systems that grow with your business, handling increased load without degradation"
+    },
+    {
+      "title": "Security",
+      "description": "Security is built in from day one, with proper authentication, encryption, and compliance"
+    },
+    {
+      "title": "Maintainability",
+      "description": "Clean code, documentation, and testing ensure long-term reliability and easy updates"
+    },
+    {
+      "title": "Performance",
+      "description": "Optimized delivery, caching strategies, and efficient queries for fast user experiences"
+    }
+  ],
+  "process": [
+    {
+      "step": "Discovery",
+      "description": "Understanding requirements, constraints, and success criteria"
+    },
+    {
+      "step": "Architecture",
+      "description": "Designing system architecture, data models, and integration points"
+    },
+    {
+      "step": "Build",
+      "description": "Iterative development with regular demos and feedback cycles"
+    },
+    {
+      "step": "Deploy",
+      "description": "Production deployment with monitoring and documentation"
+    },
+    {
+      "step": "Support",
+      "description": "Ongoing maintenance, updates, and technical support"
+    }
+  ]
+}

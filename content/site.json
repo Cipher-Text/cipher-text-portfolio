@@ -1,0 +1,18 @@
+{
+  "name": "CipherText",
+  "tagline": "We design and build reliable digital systems for healthcare, governance, and data-driven platforms",
+  "email": "hello@ciphertext.com",
+  "phone": "+234 XXX XXX XXXX",
+  "nav": [
+    { "label": "Work", "href": "/work" },
+    { "label": "Services", "href": "/services" },
+    { "label": "Products", "href": "/products" },
+    { "label": "Technology", "href": "/technology" },
+    { "label": "About", "href": "/about" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "cta": {
+    "primary": "View Our Work",
+    "secondary": "Get In Touch"
+  }
+}

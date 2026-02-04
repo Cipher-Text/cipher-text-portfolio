@@ -1,0 +1,81 @@
+{
+  "projects": [
+    {
+      "slug": "open-care",
+      "title": "Open Care",
+      "category": "Healthcare Platform",
+      "description": "Comprehensive healthcare ecosystem connecting patients, providers, and health facilities",
+      "featured": true,
+      "thumbnail": "/images/opencare-thumb.jpg",
+      "problem": "Healthcare in Nigeria lacks integrated systems for appointment scheduling, medical records, and facility discovery",
+      "solution": "Built a multi-sided platform with patient portals, provider dashboards, and facility management",
+      "features": [
+        "Online appointment booking",
+        "Electronic health records",
+        "Provider directory and search",
+        "Insurance integration",
+        "Telemedicine capabilities"
+      ],
+      "tech": ["Next.js", "Spring Boot", "PostgreSQL", "Docker", "AWS"],
+      "status": "Live",
+      "link": "https://opencare.ng"
+    },
+    {
+      "slug": "election-management",
+      "title": "Election Management System",
+      "category": "Government Platform",
+      "description": "Secure digital system for managing electoral processes and results",
+      "featured": true,
+      "thumbnail": "/images/election-thumb.jpg",
+      "problem": "Manual election management processes prone to errors and delays",
+      "solution": "Built secure platform for voter registration, result collation, and real-time reporting",
+      "features": [
+        "Voter registration and verification",
+        "Real-time result collation",
+        "Multi-level access control",
+        "Audit trails and reporting",
+        "SMS and email notifications"
+      ],
+      "tech": ["React", "Spring Boot", "PostgreSQL", "Redis"],
+      "status": "Deployed"
+    },
+    {
+      "slug": "news-platform",
+      "title": "News & Content Platform",
+      "category": "Media CMS",
+      "description": "Modern content management system for news organizations",
+      "featured": true,
+      "thumbnail": "/images/news-thumb.jpg",
+      "problem": "Legacy CMS platforms lack modern publishing workflows and mobile optimization",
+      "solution": "Built custom CMS with editorial workflow, multimedia support, and responsive delivery",
+      "features": [
+        "Editorial workflow and approval",
+        "Rich media management",
+        "SEO optimization",
+        "Multi-channel publishing",
+        "Analytics dashboard"
+      ],
+      "tech": ["Next.js", "Node.js", "MongoDB", "S3"],
+      "status": "Live"
+    },
+    {
+      "slug": "alumni-portal",
+      "title": "Alumni Management System",
+      "category": "Education Platform",
+      "description": "Comprehensive platform for alumni engagement and institutional fundraising",
+      "featured": false,
+      "thumbnail": "/images/alumni-thumb.jpg",
+      "problem": "Universities struggle to maintain alumni connections and manage giving programs",
+      "solution": "Built integrated platform for member profiles, events, donations, and communication",
+      "features": [
+        "Member directory and profiles",
+        "Event management and RSVP",
+        "Online donation processing",
+        "Chapter management",
+        "Communication tools"
+      ],
+      "tech": ["Next.js", "PostgreSQL", "Stripe", "SendGrid"],
+      "status": "Live"
+    }
+  ]
+}

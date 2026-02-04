@@ -1,0 +1,89 @@
+{
+  "services": [
+    {
+      "slug": "product-engineering",
+      "title": "Product Engineering",
+      "icon": "code",
+      "description": "Full-stack development of web platforms and applications",
+      "problem": "Organizations need robust, scalable software products built to last",
+      "solution": "We build production-ready applications using modern frameworks and best practices",
+      "capabilities": [
+        "Web application development",
+        "API design and integration",
+        "Database architecture",
+        "Frontend and backend development",
+        "Testing and quality assurance"
+      ],
+      "tech": ["Next.js", "React", "Spring Boot", "Node.js", "PostgreSQL"],
+      "projects": ["open-care", "news-platform"]
+    },
+    {
+      "slug": "healthcare-systems",
+      "title": "Healthcare Systems",
+      "icon": "heart",
+      "description": "HIPAA-compliant healthcare platforms and patient management systems",
+      "problem": "Healthcare providers need secure, reliable digital infrastructure",
+      "solution": "We build compliant systems for patient care, records management, and provider workflows",
+      "capabilities": [
+        "Patient portals",
+        "Electronic health records",
+        "Appointment scheduling",
+        "Telemedicine integration",
+        "Insurance and billing systems"
+      ],
+      "tech": ["Next.js", "Spring Boot", "PostgreSQL", "Docker", "AWS"],
+      "projects": ["open-care"]
+    },
+    {
+      "slug": "data-platforms",
+      "title": "Data & CMS Platforms",
+      "icon": "database",
+      "description": "Content management systems and data-driven applications",
+      "problem": "Organizations need flexible systems to manage and publish content",
+      "solution": "We build custom CMS platforms and data management tools tailored to workflow needs",
+      "capabilities": [
+        "Custom CMS development",
+        "Content workflow systems",
+        "Media management",
+        "API-first architecture",
+        "Multi-channel publishing"
+      ],
+      "tech": ["Next.js", "Node.js", "MongoDB", "PostgreSQL", "S3"],
+      "projects": ["news-platform"]
+    },
+    {
+      "slug": "dashboards-portals",
+      "title": "Custom Dashboards & Portals",
+      "icon": "layout",
+      "description": "Admin tools, reporting systems, and user portals",
+      "problem": "Teams need intuitive interfaces for managing complex data and operations",
+      "solution": "We design and build custom dashboards with real-time data and role-based access",
+      "capabilities": [
+        "Real-time data visualization",
+        "Role-based access control",
+        "Reporting and analytics",
+        "Workflow automation",
+        "Third-party integrations"
+      ],
+      "tech": ["React", "Next.js", "Chart.js", "PostgreSQL", "Redis"],
+      "projects": ["election-management", "alumni-portal"]
+    },
+    {
+      "slug": "infrastructure",
+      "title": "Infrastructure & DevOps",
+      "icon": "server",
+      "description": "Cloud deployment, CI/CD, and system reliability",
+      "problem": "Applications need reliable hosting, monitoring, and deployment pipelines",
+      "solution": "We set up production infrastructure with automated deployment and monitoring",
+      "capabilities": [
+        "Cloud infrastructure setup",
+        "CI/CD pipeline configuration",
+        "Container orchestration",
+        "Monitoring and alerting",
+        "Backup and disaster recovery"
+      ],
+      "tech": ["Docker", "AWS", "GitHub Actions", "Nginx", "Redis"],
+      "projects": []
+    }
+  ]
+}
