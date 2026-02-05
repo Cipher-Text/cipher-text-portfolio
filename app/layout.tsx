@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
@@ -32,6 +33,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
+      <head>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-MFHGB8RCNL" />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-MFHGB8RCNL');
+          `}
+        </Script>
+      </head>
       <body className="min-h-screen bg-white flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>
