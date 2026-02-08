@@ -20,6 +20,13 @@
       "status": "Development",
       "link": null,
       "image": "/images/profile-product.jpg"
+    },
+    {
+      "name": "CipherPress Monorepo",
+      "description": "Strapi + Next.js newsroom monorepo with localized content, editorial workflows, ad serving, and Dockerized local development",
+      "status": "Live",
+      "link": null,
+      "image": "/images/cipherpress-product.jpg"
     }
   ]
 }
