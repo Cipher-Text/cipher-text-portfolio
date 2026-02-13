@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { getSiteConfig } from "@/lib/content";
@@ -14,7 +15,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="text-xl font-bold text-slate-900">
-            {site.name}
+            <Image src="/logo.svg" alt={site.name} width={200} height={60} />
           </Link>
 
           {/* Desktop Navigation */}
