@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100">
-      <nav className="max-w-7xl mx-auto px-6 py-4">
+      <nav className="max-w-7xl mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="text-xl font-bold text-slate-900">
@@ -24,7 +24,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-slate-600 hover:text-slate-900 transition-colors text-sm font-medium"
+                className="text-slate-600 hover:text-slate-900 transition-colors text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-accent hover:after:w-full after:transition-all after:duration-500"
               >
                 {item.label}
               </Link>

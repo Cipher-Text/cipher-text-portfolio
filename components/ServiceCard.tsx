@@ -36,14 +36,14 @@ const iconMap: Record<string, React.ReactNode> = {
 export default function ServiceCard({ service }: ServiceCardProps) {
   return (
     <Link href={`/services/${service.slug}`} className="group block">
-      <article className="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full">
+      <article className="bg-white rounded-xl border border-slate-200 p-6 hover:bg-accent-50 transition-all duration-300 hover:-translate-y-1 h-full">
         {/* Icon */}
-        <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600 mb-4 group-hover:bg-blue-100 transition-colors">
+        <div className="w-12 h-12 bg-accent-50 rounded-lg flex items-center justify-center text-accent mb-4 group-hover:bg-accent-100 transition-colors">
           {iconMap[service.icon] || iconMap.code}
         </div>
 
         {/* Content */}
-        <h3 className="text-lg font-semibold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
+        <h3 className="text-lg font-semibold text-primary-400 mb-2 group-hover:text-primary transition-colors">
           {service.title}
         </h3>
 

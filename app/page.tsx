@@ -29,13 +29,13 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/work"
-                className="inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+                className="inline-flex items-center justify-center bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-accent-700 transition-colors"
               >
-                {site.cta.primary}
+                {site.cta.primary} 
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center bg-white text-slate-900 px-6 py-3 rounded-lg font-medium border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-colors"
+                className="inline-flex items-center justify-center bg-white text-primary px-6 py-3 rounded-lg font-medium border border-slate-200 hover:text-primary-400 hover:border-slate-300 hover:bg-slate-50 transition-colors"
               >
                 {site.cta.secondary}
               </Link>
@@ -45,13 +45,13 @@ export default function HomePage() {
       </section>
 
       {/* Capabilities Section */}
-      <section className="py-20 md:py-28">
+      <section className="py-20 md:py-28 bg-primary">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               What We Build
             </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-300 max-w-2xl mx-auto">
               End-to-end software engineering for organizations that need reliable digital systems
             </p>
           </div>
@@ -65,7 +65,7 @@ export default function HomePage() {
           <div className="text-center mt-10">
             <Link
               href="/services"
-              className="text-blue-600 font-medium hover:text-blue-700 transition-colors"
+              className="text-accent font-medium hover:text-accent-dark transition-colors"
             >
               View all services &rarr;
             </Link>
@@ -77,7 +77,7 @@ export default function HomePage() {
       <section className="py-20 md:py-28 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
               Featured Work
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
@@ -94,7 +94,7 @@ export default function HomePage() {
           <div className="text-center mt-10">
             <Link
               href="/work"
-              className="inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+              className="inline-flex items-center justify-center bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-800 transition-colors"
             >
               View All Projects
             </Link>
@@ -103,15 +103,15 @@ export default function HomePage() {
       </section>
 
       {/* Trust Metrics Section */}
-      <section className="py-20 md:py-28">
+      <section className="py-16 md:py-20 bg-secondary">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             {metrics.map((metric) => (
               <div key={metric.label}>
-                <div className="text-4xl md:text-5xl font-bold text-slate-900 mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
                   {metric.value}
                 </div>
-                <div className="text-slate-600">{metric.label}</div>
+                <div className="text-primary-700">{metric.label}</div>
               </div>
             ))}
           </div>
@@ -119,7 +119,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-28 bg-slate-900 text-white">
+      <section className="py-20 md:py-28 bg-primary-700 text-white">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to build something reliable?
@@ -129,7 +129,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center bg-white text-slate-900 px-6 py-3 rounded-lg font-medium hover:bg-slate-100 transition-colors"
+            className="inline-flex items-center justify-center bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-accent-700 transition-colors"
           >
             Get In Touch
           </Link>
