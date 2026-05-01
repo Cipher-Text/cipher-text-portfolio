@@ -2,12 +2,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { getSiteConfig } from "@/lib/content";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const site = getSiteConfig();
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100">
@@ -24,7 +26,12 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-slate-600 hover:text-slate-900 transition-colors text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-accent hover:after:w-full after:transition-all after:duration-500"
+                aria-current={pathname === item.href ? "page" : undefined}
+                className={`transition-colors text-sm font-medium relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:bg-accent after:transition-all after:duration-300 ${
+                  pathname === item.href
+                    ? "text-primary after:w-full"
+                    : "text-slate-600 hover:text-slate-900 after:w-0 hover:after:w-full"
+                }`}
               >
                 {item.label}
               </Link>
@@ -37,6 +44,8 @@ export default function Header() {
             className="md:hidden p-2 text-slate-600 hover:text-slate-900"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-menu"
           >
             <svg
               className="w-6 h-6"
@@ -65,13 +74,16 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="md:hidden pt-4 pb-2 border-t border-slate-100 mt-4">
+          <div id="mobile-menu" className="md:hidden pt-4 pb-2 border-t border-slate-100 mt-4">
             <div className="flex flex-col space-y-4">
               {site.nav.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-slate-600 hover:text-slate-900 transition-colors text-sm font-medium"
+                  aria-current={pathname === item.href ? "page" : undefined}
+                  className={`transition-colors text-sm font-medium ${
+                    pathname === item.href ? "text-primary" : "text-slate-600 hover:text-slate-900"
+                  }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.label}
@@ -79,7 +91,7 @@ export default function Header() {
               ))}
               <Link
                 href="/contact"
-                className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors text-center"
+                className="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary-700 transition-colors text-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Contact

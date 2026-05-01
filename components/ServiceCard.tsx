@@ -43,7 +43,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
         </div>
 
         {/* Content */}
-        <h3 className="text-lg font-semibold text-primary-400 mb-2 group-hover:text-primary transition-colors">
+        <h3 className="text-lg font-semibold text-primary-500 mb-2 group-hover:text-primary-700 transition-colors">
           {service.title}
         </h3>
 

@@ -13,7 +13,7 @@ export default function ProductsPage() {
   const statusColors: Record<string, string> = {
     Live: 'bg-green-50 text-green-600',
     Beta: 'bg-amber-50 text-amber-600',
-    Development: 'bg-blue-50 text-blue-600',
+    Development: 'bg-primary-50 text-primary-600',
   }
 
   return (
@@ -72,7 +72,7 @@ export default function ProductsPage() {
                       href={product.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center text-blue-600 font-medium text-sm hover:text-blue-700 transition-colors"
+                      className="inline-flex items-center text-primary-600 font-medium text-sm hover:text-primary-700 transition-colors"
                     >
                       Visit Product
                       <svg

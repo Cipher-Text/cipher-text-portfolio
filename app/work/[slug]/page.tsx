@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { getProjects, getProjectBySlug } from '@/lib/content'
 
@@ -54,7 +55,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded">
+              <span className="text-sm font-medium text-primary-600 bg-primary-50 px-3 py-1 rounded">
                 {project.category}
               </span>
               <span
@@ -81,12 +82,16 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </div>
       </section>
 
-      {/* Project Image Placeholder */}
       <section className="max-w-7xl mx-auto px-6 -mt-8">
-        <div className="aspect-video bg-slate-200 rounded-xl flex items-center justify-center">
-          <span className="text-slate-400 text-lg font-medium">
-            Project Image: {project.title}
-          </span>
+        <div className="aspect-video bg-slate-200 rounded-xl relative overflow-hidden shadow-sm">
+          <Image
+            src={project.thumbnail}
+            alt={`${project.title} project image`}
+            fill
+            sizes="100vw"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary-900/40 to-transparent" />
         </div>
       </section>
 
@@ -131,7 +136,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 className="flex items-start gap-3 bg-white p-4 rounded-lg border border-slate-200"
               >
                 <svg
-                  className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0"
+                  className="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

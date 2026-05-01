@@ -17,7 +17,8 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-24 md:py-32 bg-slate-50">
+      <section className="py-24 md:py-32 bg-slate-50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(255,190,88,0.14),_transparent_55%)]" />
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
@@ -45,7 +46,8 @@ export default function HomePage() {
       </section>
 
       {/* Capabilities Section */}
-      <section className="py-20 md:py-28 bg-primary">
+      <section className="py-20 md:py-28 bg-primary relative">
+        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,_rgba(255,255,255,0.04),_transparent_20%,_transparent_80%,_rgba(255,255,255,0.04))]" />
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -65,7 +67,7 @@ export default function HomePage() {
           <div className="text-center mt-10">
             <Link
               href="/services"
-              className="text-accent font-medium hover:text-accent-dark transition-colors"
+              className="text-accent font-medium hover:text-accent-200 transition-colors"
             >
               View all services &rarr;
             </Link>

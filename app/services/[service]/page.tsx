@@ -84,7 +84,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
           </Link>
 
           <div className="max-w-3xl">
-            <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6">
+            <div className="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600 mb-6">
               {iconMap[service.icon] || iconMap.code}
             </div>
 
@@ -140,7 +140,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                 className="flex items-start gap-3 bg-white p-4 rounded-lg border border-slate-200"
               >
                 <svg
-                  className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0"
+                  className="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
