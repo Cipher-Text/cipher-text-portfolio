@@ -72,7 +72,8 @@
         "Stripe",
         "SendGrid"
       ],
-      "status": "Live"
+      "status": "Live",
+      "link": "https://alumni.ciphertextlabs.com"
     }
   ]
 }
