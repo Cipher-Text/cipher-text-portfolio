@@ -1,13 +1,11 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
-import { Inter } from 'next/font/google'
+import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import { getSiteConfig } from '@/lib/content'
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-})
+const geist = Geist({ subsets: ['latin'], variable: '--font-geist', weight: ['400', '500', '600', '700'] })
+const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono', weight: ['400', '500'] })
 
 const site = getSiteConfig()
 
@@ -30,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${geist.variable} ${geistMono.variable}`}>
       <head>
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-MFHGB8RCNL" />
         <Script id="gtag-init" strategy="afterInteractive">
@@ -43,7 +41,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className="min-h-screen bg-white flex flex-col">
+      <body className="min-h-screen bg-mist font-geist text-ink antialiased">
         {children}
       </body>
     </html>

@@ -7,45 +7,22 @@
     scroll-behavior: smooth;
   }
 
-  body {
-    @apply text-slate-900 antialiased;
-  }
-
   ::selection {
-    @apply bg-accent-200 text-primary-900;
-  }
-
-  /* Redesign pages (.font-geist wrapper) use the signal ring */
-  .font-geist a:focus-visible,
-  .font-geist button:focus-visible,
-  .font-geist input:focus-visible,
-  .font-geist textarea:focus-visible,
-  .font-geist select:focus-visible,
-  .font-geist summary:focus-visible {
-    @apply outline-none ring-2 ring-signal ring-offset-2 ring-offset-white;
+    @apply bg-signal/30 text-ink;
   }
 
   a:focus-visible,
   button:focus-visible,
   input:focus-visible,
   textarea:focus-visible,
-  select:focus-visible {
-    @apply outline-none ring-2 ring-accent-400 ring-offset-2 ring-offset-white;
-  }
-}
-
-@layer utilities {
-  .line-clamp-2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  select:focus-visible,
+  summary:focus-visible {
+    @apply outline-none ring-2 ring-signal ring-offset-2 ring-offset-white;
   }
 
-  .line-clamp-3 {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
 }
