@@ -9,7 +9,7 @@ const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono'
 export default function SiteLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className={`${geist.variable} ${geistMono.variable} min-h-screen bg-mist font-geist text-ink antialiased`}>
-      <Nav variant="dark" />
+      <Nav />
       <main>{children}</main>
       <SiteFooter />
     </div>

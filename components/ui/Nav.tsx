@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import Logo from './Logo'
 import Button from './Button'
@@ -13,9 +14,14 @@ const LINKS = [
   { href: '/about', label: 'Company' },
 ]
 
-export default function Nav({ variant = 'dark' }: { variant?: 'dark' | 'light' }) {
+/** Routes whose first section is dark, so the Nav sits flush on it. */
+const DARK_ROUTES = (path: string) => path === '/' || path.startsWith('/services/')
+
+export default function Nav({ variant = 'auto' }: { variant?: 'dark' | 'light' | 'auto' }) {
   const [open, setOpen] = useState(false)
-  const dark = variant === 'dark'
+  const pathname = usePathname()
+  const dark = variant === 'auto' ? DARK_ROUTES(pathname) : variant === 'dark'
+  const isActive = (href: string) => pathname === href || pathname.startsWith(`${href}/`)
 
   useEffect(() => {
     if (!open) return
@@ -27,7 +33,7 @@ export default function Nav({ variant = 'dark' }: { variant?: 'dark' | 'light' }
   const linkCls = dark ? 'text-[#C9D3D9] hover:text-white' : 'text-slate hover:text-ink'
 
   return (
-    <header className={dark ? 'border-b border-line-dark bg-ink' : 'border-b border-line bg-mist'}>
+    <header className={dark ? 'border-b border-line-dark bg-ink' : 'border-b border-line bg-white'}>
       <nav aria-label="Primary" className="mx-auto flex max-w-container items-center justify-between gap-4 px-5 py-3.5 sm:px-8 lg:py-[18px]">
         <Link href="/" aria-label="Cipher Text Lab home" className="rounded-control">
           <Logo variant={dark ? 'on-dark' : 'on-light'} size={36} />
@@ -35,11 +41,11 @@ export default function Nav({ variant = 'dark' }: { variant?: 'dark' | 'light' }
 
         <div className="hidden items-center gap-1 md:flex">
           {LINKS.map((l) => (
-            <Link key={l.href} href={l.href} className={`flex min-h-[44px] items-center px-3.5 text-[15px] ${linkCls}`}>
+            <Link key={l.href} href={l.href} aria-current={isActive(l.href) ? 'page' : undefined} className={`flex min-h-[44px] items-center px-3.5 text-[15px] ${linkCls} ${isActive(l.href) ? 'font-semibold' : ''}`}>
               {l.label}
             </Link>
           ))}
-          <Button href="/contact" className="ml-3 !px-5 !py-3 text-[15px]">Start a project</Button>
+          <Button href="/contact" variant={dark ? 'primary' : 'secondary'} className="ml-3 !px-5 !py-3 text-[15px]">Start a project</Button>
         </div>
 
         <button
