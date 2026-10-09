@@ -9,12 +9,15 @@ export default function CaseStudyCard({
   title,
   summary,
   preview,
+  headingLevel: Heading = 'h3',
 }: {
   href: string
   meta: string
   title: string
   summary: string
   preview?: ReactNode
+  /** Use 'h2' when the card follows an h1 directly (e.g. the /work index) */
+  headingLevel?: 'h2' | 'h3'
 }) {
   return (
     <Link href={href} className="group flex flex-col overflow-hidden rounded-card-lg border border-line bg-white transition-colors hover:border-ink">
@@ -25,7 +28,7 @@ export default function CaseStudyCard({
       </div>
       <div className="flex flex-col gap-3 p-8">
         <Tag variant="stack" className="self-start bg-transparent p-0 text-slate">{meta}</Tag>
-        <h3 className="text-[26px] font-semibold tracking-[-0.02em]">{title}</h3>
+        <Heading className="text-[26px] font-semibold tracking-[-0.02em]">{title}</Heading>
         <p className="text-base leading-relaxed text-slate">{summary}</p>
       </div>
     </Link>

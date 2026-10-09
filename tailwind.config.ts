@@ -38,7 +38,7 @@ const config: Config = {
         ink: '#0B1015',
         graphite: '#121A21',
         'line-dark': '#1E2A33',
-        signal: { DEFAULT: '#19B48A', deep: '#0E8A68' },
+        signal: { DEFAULT: '#19B48A', deep: '#0D7E5F' /* handoff #0E8A68 is 4.0:1 on mist; darkened for AA (4.7:1) */ },
         slate: { DEFAULT: '#4B5A63' },
         'muted-dark': { DEFAULT: '#B4C1C9', dim: '#8FA0AB' },
         mist: '#F5F7F6',

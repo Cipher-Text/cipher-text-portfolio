@@ -33,6 +33,7 @@ export default function WorkPage() {
               meta={`${p.category.toUpperCase()} · ${p.status.toUpperCase()}`}
               title={p.title}
               summary={p.description}
+              headingLevel="h2"
             />
           ))}
         </div>

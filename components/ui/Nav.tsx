@@ -35,7 +35,7 @@ export default function Nav({ variant = 'auto' }: { variant?: 'dark' | 'light' |
   return (
     <header className={dark ? 'border-b border-line-dark bg-ink' : 'border-b border-line bg-white'}>
       <nav aria-label="Primary" className="mx-auto flex max-w-container items-center justify-between gap-4 px-5 py-3.5 sm:px-8 lg:py-[18px]">
-        <Link href="/" aria-label="Cipher Text Lab home" className="rounded-control">
+        <Link href="/" aria-label="ciphertext/lab home" className="rounded-control">
           <Logo variant={dark ? 'on-dark' : 'on-light'} size={36} />
         </Link>
 

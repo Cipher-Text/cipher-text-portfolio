@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import Logo from '@/components/ui/Logo'
+import Logo, { LogoMark } from '@/components/ui/Logo'
 import Button, { ArrowRight } from '@/components/ui/Button'
 import Tag from '@/components/ui/Tag'
 import Eyebrow from '@/components/ui/Eyebrow'
@@ -20,7 +20,7 @@ const COLORS = [
   ['graphite', '#121A21', 'bg-graphite'],
   ['line-dark', '#1E2A33', 'bg-line-dark'],
   ['signal', '#19B48A', 'bg-signal'],
-  ['signal-deep', '#0E8A68', 'bg-signal-deep'],
+  ['signal-deep', '#0D7E5F', 'bg-signal-deep'],
   ['slate', '#4B5A63', 'bg-slate'],
   ['muted-dark', '#B4C1C9', 'bg-muted-dark'],
   ['muted-dark-dim', '#8FA0AB', 'bg-muted-dark-dim'],
@@ -76,7 +76,7 @@ export default function Styleguide() {
         <div className="grid gap-5 md:grid-cols-3">
           <div className="flex h-56 items-center justify-center rounded-card-lg border border-line bg-white"><Logo variant="on-light" size={48} /></div>
           <div className="flex h-56 items-center justify-center rounded-card-lg bg-ink"><Logo variant="on-dark" size={48} /></div>
-          <div className="flex h-56 items-center justify-center rounded-card-lg bg-signal"><Logo variant="on-light" size={48} /></div>
+          <div className="flex h-56 items-end justify-center gap-7 rounded-card-lg bg-signal pb-16"><LogoMark size={96} /><LogoMark size={48} /><LogoMark size={24} /></div>
         </div>
       </Block>
 
