@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cipher Text Lab — Home</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0B1015;text-decoration:none}a:hover{color:#0E8A68}
+</style>
+</helmet>
+<div style="font-family: 'Geist', 'Helvetica Neue', system-ui, sans-serif; color: #0B1015; background: #F5F7F6; min-height: 100vh">
+
+<!-- ============ NAV ============ -->
+<header style="background: #0B1015; border-bottom: 1px solid #1E2A33">
+<nav aria-label="Primary" style="max-width: 1240px; margin: 0 auto; padding: 18px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" aria-label="Cipher Text Lab home" style="display: flex; align-items: center; gap: 12px; color: #F5F7F6">
+<svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="8" fill="#F5F7F6"></rect><rect x="8" y="8" width="6" height="6" rx="1.2" fill="#0B1015"></rect><rect x="15" y="8" width="6" height="6" rx="1.2" fill="#0B1015"></rect><rect x="22" y="8" width="6" height="6" rx="1.2" fill="#0B1015"></rect><rect x="8" y="15" width="6" height="6" rx="1.2" fill="#0B1015"></rect><rect x="15" y="15" width="6" height="6" rx="1.2" fill="{{accent}}"></rect><rect x="8" y="22" width="6" height="6" rx="1.2" fill="#0B1015"></rect><rect x="15" y="22" width="6" height="6" rx="1.2" fill="#0B1015"></rect><rect x="22" y="22" width="6" height="6" rx="1.2" fill="#0B1015"></rect></svg>
+<span style="font-size: 19px; font-weight: 600; letter-spacing: -0.02em">ciphertext<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-weight: 400; color: #8FA0AB">/lab</span></span>
+</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px">
+<a href="#work" style="color: #C9D3D9; font-size: 15px; padding: 12px 14px">Work</a>
+<a href="#services" style="color: #C9D3D9; font-size: 15px; padding: 12px 14px">Services</a>
+<a href="#products" style="color: #C9D3D9; font-size: 15px; padding: 12px 14px">Products</a>
+<a href="#approach" style="color: #C9D3D9; font-size: 15px; padding: 12px 14px">Approach</a>
+<a href="#company" style="color: #C9D3D9; font-size: 15px; padding: 12px 14px">Company</a>
+<a href="#contact" style="margin-left: 12px; background: {{accent}}; color: #0B1015; font-weight: 600; font-size: 15px; padding: 12px 20px; border-radius: 8px">Start a project</a>
+</div>
+</nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" style="background: #0B1015; color: #F5F7F6; padding: 112px 32px 120px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; align-items: center; gap: 10px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #8FA0AB">
+<span style="width: 8px; height: 8px; border-radius: 2px; background: {{accent}}"></span>
+Software engineering studio
+</div>
+<h1 style="margin: 0; font-size: 68px; line-height: 1.02; letter-spacing: -0.035em; font-weight: 600">Software for systems that can’t afford to fail.</h1>
+<p style="margin: 0; font-size: 20px; line-height: 1.55; color: #B4C1C9; max-width: 560px">We design, build and operate dependable platforms for healthcare providers, public institutions and data-driven organizations — engineered to pass audits, scale with demand and stay maintainable for years.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px">
+<a href="#contact" style="background: {{accent}}; color: #0B1015; font-weight: 600; font-size: 16px; padding: 16px 26px; border-radius: 8px; display: inline-flex; align-items: center; gap: 10px">Book a discovery call
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+<a href="#work" style="border: 1px solid #33424D; color: #F5F7F6; font-weight: 500; font-size: 16px; padding: 16px 26px; border-radius: 8px">See our work</a>
+</div>
+</div>
+
+<!-- architecture panel -->
+<div style="flex: 1 1 440px; min-width: 0; background: #121A21; border: 1px solid #1E2A33; border-radius: 16px; overflow: hidden">
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; border-bottom: 1px solid #1E2A33; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #8FA0AB">
+<span>open-care / architecture</span>
+<span style="display: flex; align-items: center; gap: 8px; color: #C9D3D9"><span style="width: 7px; height: 7px; border-radius: 50%; background: {{accent}}"></span>production</span>
+</div>
+<div style="padding: 20px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 18px; border: 1px solid #26343E; border-radius: 10px">
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; color: #8FA0AB">01 · INTERFACE</span><span style="font-size: 16px; font-weight: 500">Patient &amp; provider portals</span></div>
+<div style="display: flex; gap: 6px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; padding: 5px 9px; border-radius: 5px; background: #1A252E; color: #C9D3D9">Next.js</span><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; padding: 5px 9px; border-radius: 5px; background: #1A252E; color: #C9D3D9">React</span></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 18px; border: 1px solid #26343E; border-radius: 10px">
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; color: #8FA0AB">02 · SERVICES</span><span style="font-size: 16px; font-weight: 500">Scheduling, records, billing APIs</span></div>
+<div style="display: flex; gap: 6px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; padding: 5px 9px; border-radius: 5px; background: #1A252E; color: #C9D3D9">Spring Boot</span></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 18px; border: 1px solid #26343E; border-radius: 10px">
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; color: #8FA0AB">03 · DATA</span><span style="font-size: 16px; font-weight: 500">Encrypted clinical store + audit log</span></div>
+<div style="display: flex; gap: 6px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; padding: 5px 9px; border-radius: 5px; background: #1A252E; color: #C9D3D9">PostgreSQL</span></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 18px; border: 1px solid {{accent}}; border-radius: 10px">
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; color: {{accent}}">04 · OPERATE</span><span style="font-size: 16px; font-weight: 500">Monitoring, backups, on-call</span></div>
+<div style="display: flex; gap: 6px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; padding: 5px 9px; border-radius: 5px; background: #1A252E; color: #C9D3D9">[CLOUD]</span></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- proof strip -->
+<div style="max-width: 1240px; margin: 96px auto 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1px; background: #1E2A33; border: 1px solid #1E2A33; border-radius: 12px; overflow: hidden">
+<div style="background: #0B1015; padding: 28px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 40px; font-weight: 600; letter-spacing: -0.03em">5+ yrs</span><span style="font-size: 15px; color: #8FA0AB">Building production software since 2020</span></div>
+<div style="background: #0B1015; padding: 28px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 40px; font-weight: 600; letter-spacing: -0.03em">20+</span><span style="font-size: 15px; color: #8FA0AB">Systems shipped and in use</span></div>
+<div style="background: #0B1015; padding: 28px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 40px; font-weight: 600; letter-spacing: -0.03em">99.9%</span><span style="font-size: 15px; color: #8FA0AB">Uptime target on managed platforms</span></div>
+<div style="background: #0B1015; padding: 28px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 40px; font-weight: 600; letter-spacing: -0.03em">4</span><span style="font-size: 15px; color: #8FA0AB">Sectors: health, public, media, education</span></div>
+</div>
+</section>
+
+<!-- ============ CLIENTS ============ -->
+<section aria-label="Clients" style="padding: 56px 32px; border-bottom: 1px solid #DDE3E1; background: #FFFFFF">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #4B5A63">Trusted by teams at</span>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div style="width: 148px; height: 44px; border: 1px dashed #C3CCCA; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #4B5A63">[CLIENT LOGO]</div>
+<div style="width: 148px; height: 44px; border: 1px dashed #C3CCCA; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #4B5A63">[CLIENT LOGO]</div>
+<div style="width: 148px; height: 44px; border: 1px dashed #C3CCCA; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #4B5A63">[CLIENT LOGO]</div>
+<div style="width: 148px; height: 44px; border: 1px dashed #C3CCCA; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #4B5A63">[CLIENT LOGO]</div>
+<div style="width: 148px; height: 44px; border: 1px dashed #C3CCCA; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #4B5A63">[CLIENT LOGO]</div>
+</div>
+</div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" style="padding: 120px 32px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 680px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #0E8A68">What we do</span>
+<h2 style="margin: 0; font-size: 48px; line-height: 1.08; letter-spacing: -0.03em; font-weight: 600">One team from first sketch to production — and after.</h2>
+</div>
+<a href="#services" style="font-size: 16px; font-weight: 500; border-bottom: 1px solid #0B1015; padding: 12px 0">All services →</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 20px">
+
+<a href="#services" style="background: #FFFFFF; border: 1px solid #DDE3E1; border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 20px; min-height: 340px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="width: 48px; height: 48px; border-radius: 10px; background: #0B1015; color: #F5F7F6; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"></path><path d="M9 12h2l1-2 1 4 1-2h1"></path></svg></span><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #4B5A63">01</span></div>
+<h3 style="margin: 0; font-size: 22px; font-weight: 600; letter-spacing: -0.01em">Healthcare systems</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4B5A63; flex-grow: 1">Patient, provider and facility platforms built on HIPAA-ready architecture: encryption, access control and audit trails by default.</p>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; color: #4B5A63">Next.js · Spring Boot · PostgreSQL</span>
+</a>
+
+<a href="#services" style="background: #FFFFFF; border: 1px solid #DDE3E1; border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 20px; min-height: 340px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="width: 48px; height: 48px; border-radius: 10px; background: #0B1015; color: #F5F7F6; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M4 10h16M12 3l9 5H3l9-5z"></path><path d="M6 10v8M10 10v8M14 10v8M18 10v8"></path></svg></span><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #4B5A63">02</span></div>
+<h3 style="margin: 0; font-size: 22px; font-weight: 600; letter-spacing: -0.01em">Government &amp; public platforms</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4B5A63; flex-grow: 1">Citizen-facing services and internal tools that are accessible, multilingual and built to be handed over and maintained.</p>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; color: #4B5A63">React · Spring Boot · PostgreSQL</span>
+</a>
+
+<a href="#services" style="background: #FFFFFF; border: 1px solid #DDE3E1; border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 20px; min-height: 340px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="width: 48px; height: 48px; border-radius: 10px; background: #0B1015; color: #F5F7F6; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"></path><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"></path></svg></span><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #4B5A63">03</span></div>
+<h3 style="margin: 0; font-size: 22px; font-weight: 600; letter-spacing: -0.01em">Data &amp; content platforms</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4B5A63; flex-grow: 1">Headless CMS, newsroom tools and data pipelines that keep publishing fast and information consistent across channels.</p>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; color: #4B5A63">Next.js · Node.js · MongoDB</span>
+</a>
+
+<a href="#services" style="background: #FFFFFF; border: 1px solid #DDE3E1; border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 20px; min-height: 340px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="width: 48px; height: 48px; border-radius: 10px; background: #0B1015; color: #F5F7F6; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18M9 21V9"></path><path d="M13 17l2-3 2 2 2-4"></path></svg></span><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #4B5A63">04</span></div>
+<h3 style="margin: 0; font-size: 22px; font-weight: 600; letter-spacing: -0.01em">Dashboards &amp; portals</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4B5A63; flex-grow: 1">Admin consoles, reporting and self-service portals that turn operational data into decisions people can act on.</p>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; color: #4B5A63">React · Next.js · Chart.js</span>
+</a>
+</div>
+</div>
+</section>
+
+<!-- ============ WORK ============ -->
+<section id="work" style="padding: 120px 32px; background: #FFFFFF; border-top: 1px solid #DDE3E1; border-bottom: 1px solid #DDE3E1">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 680px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #0E8A68">Selected work</span>
+<h2 style="margin: 0; font-size: 48px; line-height: 1.08; letter-spacing: -0.03em; font-weight: 600">Live systems, real users, measurable outcomes.</h2>
+</div>
+<a href="#work" style="font-size: 16px; font-weight: 500; border-bottom: 1px solid #0B1015; padding: 12px 0">All case studies →</a>
+</div>
+
+<!-- featured -->
+<a href="CaseStudy.dc.html" style="display: flex; flex-wrap: wrap; border: 1px solid #DDE3E1; border-radius: 18px; overflow: hidden; background: #F5F7F6">
+<div style="flex: 1 1 440px; min-width: 0; padding: 48px; display: flex; flex-direction: column; gap: 24px; justify-content: space-between">
+<div style="display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; gap: 8px; flex-wrap: wrap"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; padding: 6px 10px; border-radius: 6px; background: #0B1015; color: #F5F7F6">HEALTHCARE</span><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; padding: 6px 10px; border-radius: 6px; border: 1px solid #C3CCCA; color: #0B1015; display: flex; align-items: center; gap: 6px"><span style="width: 6px; height: 6px; border-radius: 50%; background: #0E8A68"></span>LIVE</span></div>
+<h3 style="margin: 0; font-size: 40px; letter-spacing: -0.03em; font-weight: 600">Open Care</h3>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4B5A63">A healthcare ecosystem connecting patients, providers and facilities — appointments, records and referrals in one place.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; border-top: 1px solid #DDE3E1; padding-top: 24px">
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 28px; font-weight: 600; letter-spacing: -0.02em">[METRIC]</span><span style="font-size: 14px; color: #4B5A63">[e.g. active patients]</span></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 28px; font-weight: 600; letter-spacing: -0.02em">[METRIC]</span><span style="font-size: 14px; color: #4B5A63">[e.g. facilities onboarded]</span></div>
+</div>
+<span style="font-size: 16px; font-weight: 600; display: flex; align-items: center; gap: 8px">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</div>
+<!-- product mock -->
+<div style="flex: 1 1 560px; min-width: 0; background: #0B1015; padding: 48px 0 0 48px; display: flex; align-items: flex-end">
+<div style="width: 100%; background: #F5F7F6; border-radius: 12px 0 0 0; padding: 20px; display: flex; gap: 16px; min-height: 360px; box-sizing: border-box">
+<div style="width: 140px; flex-shrink: 0; display: flex; flex-direction: column; gap: 10px">
+<div style="height: 22px; width: 90px; border-radius: 4px; background: #0B1015"></div>
+<div style="height: 32px; border-radius: 6px; background: #DDE3E1"></div>
+<div style="height: 32px; border-radius: 6px; background: #FFFFFF; border: 1px solid #DDE3E1"></div>
+<div style="height: 32px; border-radius: 6px; background: #FFFFFF; border: 1px solid #DDE3E1"></div>
+<div style="height: 32px; border-radius: 6px; background: #FFFFFF; border: 1px solid #DDE3E1"></div>
+</div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+<div style="height: 72px; border-radius: 8px; background: #FFFFFF; border: 1px solid #DDE3E1"></div>
+<div style="height: 72px; border-radius: 8px; background: #FFFFFF; border: 1px solid #DDE3E1"></div>
+<div style="height: 72px; border-radius: 8px; background: {{accent}}"></div>
+</div>
+<div style="flex: 1; border-radius: 8px; background: #FFFFFF; border: 1px solid #DDE3E1; padding: 14px; display: flex; flex-direction: column; gap: 10px">
+<div style="height: 12px; width: 40%; border-radius: 3px; background: #C3CCCA"></div>
+<div style="height: 10px; border-radius: 3px; background: #EEF1F0"></div>
+<div style="height: 10px; border-radius: 3px; background: #EEF1F0"></div>
+<div style="height: 10px; width: 80%; border-radius: 3px; background: #EEF1F0"></div>
+<div style="height: 10px; border-radius: 3px; background: #EEF1F0"></div>
+<div style="height: 10px; width: 65%; border-radius: 3px; background: #EEF1F0"></div>
+</div>
+</div>
+</div>
+</div>
+</a>
+
+<!-- secondary work -->
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 20px">
+<a href="#work" style="border: 1px solid #DDE3E1; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div style="height: 240px; background: #E6ECEA; padding: 32px 32px 0; display: flex; align-items: flex-end">
+<div style="width: 100%; height: 100%; background: #FFFFFF; border-radius: 10px 10px 0 0; border: 1px solid #DDE3E1; border-bottom: 0; padding: 18px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px">
+<div style="height: 14px; width: 120px; border-radius: 3px; background: #0B1015"></div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; flex: 1">
+<div style="border-radius: 6px; background: #EEF1F0"></div><div style="border-radius: 6px; background: #EEF1F0"></div><div style="border-radius: 6px; background: #EEF1F0"></div>
+</div>
+</div>
+</div>
+<div style="padding: 32px; display: flex; flex-direction: column; gap: 12px; background: #FFFFFF">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; color: #4B5A63">MEDIA CMS · LIVE</span>
+<h3 style="margin: 0; font-size: 26px; font-weight: 600; letter-spacing: -0.02em">News &amp; Content Platform</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4B5A63">A newsroom CMS that takes stories from draft to publish across web and social. [Add outcome, e.g. publish time cut by X%.]</p>
+</div>
+</a>
+<a href="#work" style="border: 1px solid #DDE3E1; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div style="height: 240px; background: #E6ECEA; padding: 32px 32px 0; display: flex; align-items: flex-end">
+<div style="width: 100%; height: 100%; background: #FFFFFF; border-radius: 10px 10px 0 0; border: 1px solid #DDE3E1; border-bottom: 0; padding: 18px; box-sizing: border-box; display: flex; gap: 12px">
+<div style="width: 64px; height: 64px; border-radius: 50%; background: #EEF1F0; flex-shrink: 0"></div>
+<div style="flex: 1; display: flex; flex-direction: column; gap: 10px"><div style="height: 14px; width: 60%; border-radius: 3px; background: #0B1015"></div><div style="height: 10px; border-radius: 3px; background: #EEF1F0"></div><div style="height: 10px; width: 70%; border-radius: 3px; background: #EEF1F0"></div><div style="height: 36px; width: 140px; border-radius: 6px; background: {{accent}}; margin-top: 8px"></div></div>
+</div>
+</div>
+<div style="padding: 32px; display: flex; flex-direction: column; gap: 12px; background: #FFFFFF">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; color: #4B5A63">EDUCATION · LIVE</span>
+<h3 style="margin: 0; font-size: 26px; font-weight: 600; letter-spacing: -0.02em">Alumni Management System</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4B5A63">Alumni engagement, events and fundraising with Stripe-powered giving. [Add outcome, e.g. members registered.]</p>
+</div>
+</a>
+</div>
+</div>
+</section>
+
+<!-- ============ APPROACH ============ -->
+<section id="approach" style="padding: 120px 32px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #0E8A68">How we work</span>
+<h2 style="margin: 0; font-size: 48px; line-height: 1.08; letter-spacing: -0.03em; font-weight: 600">A clear process, so there are no surprises in month six.</h2>
+</div>
+<ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0; border-top: 2px solid #0B1015">
+<li style="padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 14px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 14px; color: #0E8A68">01 — Discover</span><h3 style="margin: 0; font-size: 22px; font-weight: 600">Understand the problem</h3><p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4B5A63">Workshops with your team and users, compliance requirements mapped up front, a written scope with fixed milestones.</p></li>
+<li style="padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 14px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 14px; color: #0E8A68">02 — Architect</span><h3 style="margin: 0; font-size: 22px; font-weight: 600">Design the system</h3><p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4B5A63">UX prototypes you can click, plus an architecture document covering data, security and scale before code is written.</p></li>
+<li style="padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 14px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 14px; color: #0E8A68">03 — Build</span><h3 style="margin: 0; font-size: 22px; font-weight: 600">Ship in increments</h3><p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4B5A63">Two-week sprints with working demos, code review on every change, automated tests and a staging site you can use.</p></li>
+<li style="padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 14px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 14px; color: #0E8A68">04 — Operate</span><h3 style="margin: 0; font-size: 22px; font-weight: 600">Run it with you</h3><p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4B5A63">Monitoring, backups and support agreements after launch — or a clean handover with docs your own team can own.</p></li>
+</ol>
+</div>
+</section>
+
+<!-- ============ STANDARDS (dark) ============ -->
+<section id="products" style="padding: 120px 32px; background: #0B1015; color: #F5F7F6">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px">
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: {{accent}}">Engineering standards</span>
+<h2 style="margin: 0; font-size: 48px; line-height: 1.08; letter-spacing: -0.03em; font-weight: 600">Security and reliability aren’t add-ons. They’re the baseline.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #B4C1C9">Every system we deliver ships with the same non-negotiables. Ask us for our security overview and sample architecture docs.</p>
+<a href="#contact" style="align-self: flex-start; margin-top: 8px; border: 1px solid #33424D; color: #F5F7F6; font-weight: 500; font-size: 16px; padding: 14px 22px; border-radius: 8px">Request security overview</a>
+</div>
+<div style="flex: 1 1 560px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: #1E2A33; border: 1px solid #1E2A33; border-radius: 14px; overflow: hidden">
+<div style="background: #0B1015; padding: 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: {{accent}}">[ HIPAA-ready ]</span><span style="font-size: 18px; font-weight: 500">PHI encrypted at rest and in transit</span><span style="font-size: 15px; line-height: 1.55; color: #9AA8B2">BAA support, role-based access, minimum-necessary data access.</span></div>
+<div style="background: #0B1015; padding: 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: {{accent}}">[ Auditable ]</span><span style="font-size: 18px; font-weight: 500">Immutable audit logs</span><span style="font-size: 15px; line-height: 1.55; color: #9AA8B2">Who saw what, and when — traceable for every record.</span></div>
+<div style="background: #0B1015; padding: 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: {{accent}}">[ Accessible ]</span><span style="font-size: 18px; font-weight: 500">WCAG 2.2 AA interfaces</span><span style="font-size: 15px; line-height: 1.55; color: #9AA8B2">Keyboard, screen reader and low-bandwidth friendly.</span></div>
+<div style="background: #0B1015; padding: 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: {{accent}}">[ Observable ]</span><span style="font-size: 18px; font-weight: 500">CI/CD, monitoring, backups</span><span style="font-size: 15px; line-height: 1.55; color: #9AA8B2">Automated tests on every merge; restore drills on schedule.</span></div>
+</div>
+</div>
+</section>
+
+<!-- ============ COMPANY ============ -->
+<section id="company" style="padding: 120px 32px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<div style="flex: 0 1 380px; min-width: 0; aspect-ratio: 4 / 5; border-radius: 18px; background: #E6ECEA; border: 1px dashed #C3CCCA; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #4B5A63">[FOUNDER PHOTO]</div>
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #0E8A68">From the founder</span>
+<blockquote style="margin: 0; font-size: 32px; line-height: 1.3; letter-spacing: -0.02em; font-weight: 500">“Healthcare, government and data platforms need dependable systems more than most. Every project we take on, we build as if we were the ones relying on it.”</blockquote>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">[Founder full name]</span><span style="font-size: 15px; color: #4B5A63">Founder &amp; Principal Engineer, Cipher Text Lab</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; border-top: 1px solid #DDE3E1; padding-top: 28px">
+<a href="#company" style="font-size: 15px; font-weight: 500; padding: 12px 18px; border: 1px solid #C3CCCA; border-radius: 8px">Meet the team</a>
+<a href="#company" style="font-size: 15px; font-weight: 500; padding: 12px 18px; border: 1px solid #C3CCCA; border-radius: 8px">Careers</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section id="contact" style="padding: 0 32px 120px">
+<div style="max-width: 1240px; margin: 0 auto; background: #0B1015; color: #F5F7F6; border-radius: 22px; padding: 72px 64px; display: flex; flex-wrap: wrap; gap: 48px; justify-content: space-between; align-items: center; box-sizing: border-box">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<h2 style="margin: 0; font-size: 52px; line-height: 1.05; letter-spacing: -0.035em; font-weight: 600">Have a system that needs to work?</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #B4C1C9">Tell us what you’re building. You’ll hear back from an engineer — not a sales team — within one business day.</p>
+</div>
+<div style="flex: 0 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<a href="#contact" style="background: {{accent}}; color: #0B1015; font-weight: 600; font-size: 17px; padding: 18px 24px; border-radius: 10px; text-align: center">Book a 30-minute call</a>
+<a href="mailto:hello@ciphertextlabs.com" style="border: 1px solid #33424D; color: #F5F7F6; font-weight: 500; font-size: 17px; padding: 18px 24px; border-radius: 10px; text-align: center; font-family: 'Geist Mono', ui-monospace, monospace">hello@ciphertextlabs.com</a>
+</div>
+</div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer style="background: #FFFFFF; border-top: 1px solid #DDE3E1; padding: 72px 32px 40px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-wrap: wrap; gap: 48px; justify-content: space-between">
+<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 18px; max-width: 360px">
+<div style="display: flex; align-items: center; gap: 12px">
+<svg width="32" height="32" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="8" fill="#0B1015"></rect><rect x="8" y="8" width="6" height="6" rx="1.2" fill="#F5F7F6"></rect><rect x="15" y="8" width="6" height="6" rx="1.2" fill="#F5F7F6"></rect><rect x="22" y="8" width="6" height="6" rx="1.2" fill="#F5F7F6"></rect><rect x="8" y="15" width="6" height="6" rx="1.2" fill="#F5F7F6"></rect><rect x="15" y="15" width="6" height="6" rx="1.2" fill="{{accent}}"></rect><rect x="8" y="22" width="6" height="6" rx="1.2" fill="#F5F7F6"></rect><rect x="15" y="22" width="6" height="6" rx="1.2" fill="#F5F7F6"></rect><rect x="22" y="22" width="6" height="6" rx="1.2" fill="#F5F7F6"></rect></svg>
+<span style="font-size: 18px; font-weight: 600; letter-spacing: -0.02em">ciphertext<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-weight: 400; color: #4B5A63">/lab</span></span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4B5A63">Dependable software for healthcare, government and data-driven organizations.</p>
+<span style="font-size: 15px; color: #4B5A63">[City, Country] · [Phone]</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 64px">
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; color: #4B5A63; margin-bottom: 8px">COMPANY</span><a href="#company" style="font-size: 15px; padding: 6px 0">About</a><a href="#company" style="font-size: 15px; padding: 6px 0">Team</a><a href="#company" style="font-size: 15px; padding: 6px 0">Careers</a><a href="#contact" style="font-size: 15px; padding: 6px 0">Contact</a></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; color: #4B5A63; margin-bottom: 8px">WHAT WE DO</span><a href="#services" style="font-size: 15px; padding: 6px 0">Services</a><a href="#work" style="font-size: 15px; padding: 6px 0">Work</a><a href="#products" style="font-size: 15px; padding: 6px 0">Products</a><a href="#approach" style="font-size: 15px; padding: 6px 0">Technology</a></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; color: #4B5A63; margin-bottom: 8px">CONNECT</span><a href="https://www.linkedin.com" style="font-size: 15px; padding: 6px 0">LinkedIn</a><a href="https://github.com" style="font-size: 15px; padding: 6px 0">GitHub</a><a href="mailto:hello@ciphertextlabs.com" style="font-size: 15px; padding: 6px 0">Email</a></div>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; border-top: 1px solid #DDE3E1; padding-top: 24px; font-size: 14px; color: #4B5A63">
+<span>© 2026 Cipher Text Lab. All rights reserved.</span>
+<div style="display: flex; gap: 24px"><a href="#top" style="color: #4B5A63">Privacy</a><a href="#top" style="color: #4B5A63">Security</a><a href="#top" style="color: #4B5A63">Terms</a></div>
+</div>
+</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#19B48A","options":["#19B48A","#3B82F6","#F2B544","#E5674B"]},"$preview":{"width":1440,"height":5900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#19B48A' };
+  }
+}
+</script>
+</body>
+</html>

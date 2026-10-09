@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Page not found — Cipher Text Lab</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#F5F7F6;text-decoration:none}a:hover{color:#19B48A}
+</style>
+</helmet>
+<div style="width: 1440px; height: 900px; box-sizing: border-box; background: #0B1015; color: #F5F7F6; font-family: 'Geist', 'Helvetica Neue', system-ui, sans-serif; display: flex; flex-direction: column; padding: 28px 100px">
+<a href="Main.dc.html" aria-label="Cipher Text Lab home" style="display: flex; align-items: center; gap: 12px; align-self: flex-start; padding: 6px 0">
+<svg width="34" height="34" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="8" fill="#F5F7F6"></rect><rect x="8" y="8" width="6" height="6" rx="1.2" fill="#0B1015"></rect><rect x="15" y="8" width="6" height="6" rx="1.2" fill="#0B1015"></rect><rect x="22" y="8" width="6" height="6" rx="1.2" fill="#0B1015"></rect><rect x="8" y="15" width="6" height="6" rx="1.2" fill="#0B1015"></rect><rect x="15" y="15" width="6" height="6" rx="1.2" fill="{{accent}}"></rect><rect x="8" y="22" width="6" height="6" rx="1.2" fill="#0B1015"></rect><rect x="15" y="22" width="6" height="6" rx="1.2" fill="#0B1015"></rect><rect x="22" y="22" width="6" height="6" rx="1.2" fill="#0B1015"></rect></svg>
+<span style="font-size: 19px; font-weight: 600; letter-spacing: -0.02em">ciphertext<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-weight: 400; color: #8FA0AB">/lab</span></span>
+</a>
+<div style="flex: 1; display: flex; align-items: center; gap: 96px">
+<!-- broken cipher block -->
+<svg width="320" height="320" viewBox="0 0 36 36" aria-hidden="true" style="flex-shrink: 0">
+<rect x="8" y="8" width="6" height="6" rx="1" fill="#26343E"></rect>
+<rect x="15" y="8" width="6" height="6" rx="1" fill="#26343E"></rect>
+<rect x="22.6" y="6.4" width="6" height="6" rx="1" fill="none" stroke="#33424D" stroke-width="0.4" stroke-dasharray="1 0.8" transform="rotate(14 25.6 9.4)"></rect>
+<rect x="8" y="15" width="6" height="6" rx="1" fill="#26343E"></rect>
+<rect x="15" y="15" width="6" height="6" rx="1" fill="{{accent}}"></rect>
+<rect x="8" y="22" width="6" height="6" rx="1" fill="#26343E"></rect>
+<rect x="15" y="22" width="6" height="6" rx="1" fill="#26343E"></rect>
+<rect x="22" y="22" width="6" height="6" rx="1" fill="#26343E"></rect>
+</svg>
+<div style="display: flex; flex-direction: column; gap: 24px; max-width: 640px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 15px; color: {{accent}}">ERROR 404 · BLOCK NOT FOUND</span>
+<h1 style="margin: 0; font-size: 64px; line-height: 1.03; letter-spacing: -0.035em; font-weight: 600">This page didn’t decrypt.</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #B4C1C9">The link may be old or mistyped. Our systems are fine — this page just doesn’t exist.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px">
+<a href="Main.dc.html" style="background: {{accent}}; color: #0B1015; font-weight: 600; font-size: 16px; padding: 16px 24px; border-radius: 8px">Back to home</a>
+<a href="Main.dc.html" style="border: 1px solid #33424D; font-weight: 500; font-size: 16px; padding: 16px 24px; border-radius: 8px">View our work</a>
+<a href="Contact.dc.html" style="border: 1px solid #33424D; font-weight: 500; font-size: 16px; padding: 16px 24px; border-radius: 8px">Contact us</a>
+</div>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#19B48A","options":["#19B48A","#3B82F6","#F2B544","#E5674B"]},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#19B48A' };
+  }
+}
+</script>
+</body>
+</html>
