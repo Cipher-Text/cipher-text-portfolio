@@ -6,6 +6,7 @@ import Eyebrow from '@/components/ui/Eyebrow'
 import CTABand from '@/components/ui/CTABand'
 import { getProjectBySlug } from '@/lib/content'
 import { getServicePage, getServicePages } from '@/lib/services'
+import { pageMetadata } from '@/lib/seo'
 
 type Props = { params: Promise<{ service: string }> }
 
@@ -17,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { service } = await params
   const page = getServicePage(service)
   if (!page) return { title: 'Service not found' }
-  return { title: page.title, description: page.hero.lede }
+  return pageMetadata({ title: page.title, description: page.hero.lede })
 }
 
 function Check() {

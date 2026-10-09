@@ -20,7 +20,7 @@ function BrokenBlock() {
 
 export default function NotFound() {
   return (
-    <main className="flex min-h-screen flex-col bg-ink px-5 py-7 text-mist sm:px-10 lg:px-[100px]">
+    <main id="main" className="flex min-h-screen flex-col bg-ink px-5 py-7 text-mist sm:px-10 lg:px-[100px]">
       <Link href="/" aria-label="Cipher Text Lab home" className="self-start rounded-control py-1.5">
         <Logo variant="on-dark" size={36} />
       </Link>

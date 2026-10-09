@@ -5,11 +5,9 @@ import Tag from '@/components/ui/Tag'
 import CTABand from '@/components/ui/CTABand'
 import { ArrowRight } from '@/components/ui/Button'
 import { getProducts } from '@/lib/content'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Products',
-  description: 'In addition to client work, we build our own products to solve common problems in healthcare, media, and developer productivity.',
-}
+export const metadata: Metadata = pageMetadata({ title: 'Products', description: 'In addition to client work, we build our own products to solve common problems in healthcare, media, and developer productivity.' })
 
 export default function ProductsPage() {
   const products = getProducts()

@@ -5,6 +5,7 @@ import Tag from '@/components/ui/Tag'
 import { ArrowRight } from '@/components/ui/Button'
 import { getProjects } from '@/lib/content'
 import { getCaseStudy, getNextProject } from '@/lib/case-studies'
+import { pageMetadata } from '@/lib/seo'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -16,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const cs = getCaseStudy(slug)
   if (!cs) return { title: 'Case study not found' }
-  return { title: cs.project.title, description: cs.project.description }
+  return pageMetadata({ title: cs.project.title, description: cs.project.description })
 }
 
 function Check() {

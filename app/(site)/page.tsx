@@ -9,12 +9,15 @@ import StatStrip from '@/components/ui/StatStrip'
 import CaseStudyCard from '@/components/ui/CaseStudyCard'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import CTABand from '@/components/ui/CTABand'
+import { pageMetadata } from '@/lib/seo'
+import { SITE_URL } from '@/lib/site-url'
 
-export const metadata: Metadata = {
-  title: { absolute: 'Cipher Text Lab — Software for systems that can’t afford to fail' },
+export const metadata: Metadata = pageMetadata({
+  title: 'Cipher Text Lab — Software for systems that can’t afford to fail',
+  absolute: true,
   description:
     'We design, build and operate dependable platforms for healthcare providers, public institutions and data-driven organizations.',
-}
+})
 
 const ARCHITECTURE = [
   { n: '01 · INTERFACE', title: 'Patient & provider portals', stack: ['Next.js', 'React'] },
@@ -47,9 +50,23 @@ const STEPS = [
 const section = 'px-5 py-16 sm:px-8 lg:py-[120px]'
 const inner = 'mx-auto flex max-w-container flex-col gap-10 lg:gap-14'
 
+const ORGANIZATION_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Cipher Text Lab',
+  url: SITE_URL,
+  logo: `${SITE_URL}/icon.png`,
+  email: 'hello@ciphertextlabs.com',
+  description: 'Software engineering studio building dependable platforms for healthcare, government and data-driven organizations.',
+}
+
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_JSON_LD) }}
+      />
       {/* Hero */}
       <section className="bg-ink px-5 pb-16 pt-14 text-mist sm:px-8 lg:pb-[120px] lg:pt-[112px]">
         <div className="mx-auto flex max-w-container flex-wrap items-center gap-12 lg:gap-16">

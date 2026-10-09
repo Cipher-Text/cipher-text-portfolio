@@ -5,12 +5,9 @@ import FAQ from '@/components/ui/FAQ'
 import CTABand from '@/components/ui/CTABand'
 import { ArrowRight } from '@/components/ui/Button'
 import { getListedServices } from '@/lib/services'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Services',
-  description:
-    'Healthcare, public-sector, data and dashboard platforms — product design, architecture, build and operations from one accountable team.',
-}
+export const metadata: Metadata = pageMetadata({ title: 'Services', description: 'Healthcare, public-sector, data and dashboard platforms — product design, architecture, build and operations from one accountable team.' })
 
 const ENGAGEMENTS = [
   { tag: 'PROJECT', title: 'Fixed-scope build', body: 'A defined product with milestones, a fixed price per phase, and a working demo every two weeks.', best: 'Best for: new platforms, rebuilds' },

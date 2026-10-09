@@ -3,12 +3,9 @@ import Eyebrow from '@/components/ui/Eyebrow'
 import CaseStudyCard from '@/components/ui/CaseStudyCard'
 import CTABand from '@/components/ui/CTABand'
 import { getProjects } from '@/lib/content'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Work',
-  description:
-    'A selection of projects that showcase our approach to building reliable, scalable software for healthcare, governance, and data platforms.',
-}
+export const metadata: Metadata = pageMetadata({ title: 'Work', description: 'A selection of projects that showcase our approach to building reliable, scalable software for healthcare, governance, and data platforms.' })
 
 export default function WorkPage() {
   const projects = getProjects()

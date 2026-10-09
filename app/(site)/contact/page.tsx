@@ -1,11 +1,9 @@
 import type { Metadata } from 'next'
 import Eyebrow from '@/components/ui/Eyebrow'
 import ContactFormPanel from '@/components/ui/ContactFormPanel'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Contact',
-  description: 'Tell us what you’re building. An engineer will reply within one business day.',
-}
+export const metadata: Metadata = pageMetadata({ title: 'Contact', description: 'Tell us what you’re building. An engineer will reply within one business day.' })
 
 const STEPS = [
   { title: 'We read and reply', body: 'Within one business day, with questions or a time to talk.' },

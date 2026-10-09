@@ -1,12 +1,9 @@
 import type { Metadata } from 'next'
 import Eyebrow from '@/components/ui/Eyebrow'
 import Button from '@/components/ui/Button'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'About',
-  description:
-    'Cipher Text Lab is a small senior engineering studio building dependable software for healthcare, government, media and education.',
-}
+export const metadata: Metadata = pageMetadata({ title: 'About', description: 'Cipher Text Lab is a small senior engineering studio building dependable software for healthcare, government, media and education.' })
 
 const VALUES = [
   { title: 'Quality over speed', body: 'We build it right the first time, because rework costs our clients more than patience does.' },

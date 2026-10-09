@@ -4,11 +4,9 @@ import Tag from '@/components/ui/Tag'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import CTABand from '@/components/ui/CTABand'
 import { getTechConfig } from '@/lib/content'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Technology',
-  description: 'Our technology stack, engineering principles, and development process.',
-}
+export const metadata: Metadata = pageMetadata({ title: 'Technology', description: 'Our technology stack, engineering principles, and development process.' })
 
 const GROUPS = [
   ['Frontend', 'frontend'],
