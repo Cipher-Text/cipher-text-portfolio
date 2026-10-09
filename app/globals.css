@@ -15,6 +15,16 @@
     @apply bg-accent-200 text-primary-900;
   }
 
+  /* Redesign pages (.font-geist wrapper) use the signal ring */
+  .font-geist a:focus-visible,
+  .font-geist button:focus-visible,
+  .font-geist input:focus-visible,
+  .font-geist textarea:focus-visible,
+  .font-geist select:focus-visible,
+  .font-geist summary:focus-visible {
+    @apply outline-none ring-2 ring-signal ring-offset-2 ring-offset-white;
+  }
+
   a:focus-visible,
   button:focus-visible,
   input:focus-visible,
